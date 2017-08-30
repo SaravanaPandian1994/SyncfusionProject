@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SyncfusionSample;assembly=SyncfusionSample"
+             x:Class="SyncfusionSample.RootPage">
+  
+  <StackLayout>
+    <StackLayout.BindingContext>
+      <local:ListViewModel/>
+    </StackLayout.BindingContext>
+    <ListView x:Name="listView" ItemsSource="{Binding ListData}" ItemSelected="ListView_ItemSelected">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Label TextColor="Red" Text="{Binding Page}" VerticalTextAlignment="Center" FontSize="15"/>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+  
+</ContentPage>

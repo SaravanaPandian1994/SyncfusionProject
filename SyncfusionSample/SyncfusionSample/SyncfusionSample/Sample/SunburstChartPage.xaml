@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sunburst="clr-namespace:Syncfusion.SfSunburstChart.XForms;assembly=Syncfusion.SfSunburstChart.XForms"
+             xmlns:local="clr-namespace:SyncfusionSample;assembly=SyncfusionSample"
+             x:Class="SyncfusionSample.SunburstChartPage">
+  
+  <ContentPage.BindingContext>
+    <local:SunburstViewModel/>
+  </ContentPage.BindingContext>
+
+  <sunburst:SfSunburstChart ItemsSource="{Binding Data}" ValueMemberPath="EmployeesCount">
+    <sunburst:SfSunburstChart.Levels>
+      <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+      <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+      <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+      <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+    </sunburst:SfSunburstChart.Levels>
+  </sunburst:SfSunburstChart>
+  
+</ContentPage>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:kanban="clr-namespace:Syncfusion.SfKanban.XForms;assembly=Syncfusion.SfKanban.XForms"  
+		         xmlns:local="clr-namespace:SyncfusionSample"
+             x:Class="SyncfusionSample.KanbanPage">
+
+  <ContentPage.BindingContext>
+    <local:KanbanViewModel/>
+  </ContentPage.BindingContext>
+
+<kanban:SfKanban x:Name="kanban" ItemsSource="{Binding Cards}" AutoGenerateColumns="True"> 
+	
+</kanban:SfKanban>
+
+</ContentPage>
