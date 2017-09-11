@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Model\ListModel.cs" />
     <Compile Include="Model\Person.cs" />
     <Compile Include="Model\RangeNavigatorModel.cs" />
@@ -86,6 +87,7 @@
       <HintPath>..\..\packages\Syncfusion.Xamarin.SfSunburstChart.15.3.0.26\lib\portable-win+net45+wp80+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Syncfusion.SfSunburstChart.XForms.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System" />
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.3.180\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Core.dll</HintPath>
       <Private>True</Private>
