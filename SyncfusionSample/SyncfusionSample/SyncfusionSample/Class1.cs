@@ -9,5 +9,7 @@ namespace SyncfusionSample
     public class Class1
     {
         public double Value { get; set; }
+        
+        public double Value1 { get; set; }
     }
 }
