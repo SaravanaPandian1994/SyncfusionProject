@@ -8,6 +8,6 @@ namespace SyncfusionSample
 {
     public class Class1
     {
-        
+        public double Value { get; set;}
     }
 }
