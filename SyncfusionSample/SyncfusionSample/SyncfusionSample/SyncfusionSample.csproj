@@ -36,7 +36,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Model\ListModel.cs" />
     <Compile Include="Model\Person.cs" />
     <Compile Include="Model\RangeNavigatorModel.cs" />
